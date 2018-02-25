@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yboberskiy.guesscelebrityapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/celebrityImageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="7dp"
+            app:srcCompat="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/answer_A_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/celebrityImageView"
+            android:text="Answer A" />
+
+        <Button
+            android:id="@+id/answer_B_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answer_A_Button"
+            android:text="Answer B" />
+
+        <Button
+            android:id="@+id/answer_C_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answer_B_Button"
+            android:text="Answer C" />
+
+        <Button
+            android:id="@+id/answer_D_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answer_C_Button"
+            android:text="Answer D" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
